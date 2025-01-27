@@ -40,7 +40,7 @@ jobs:
         run: |
           cd box
           go run ./cmd/internal/build_libbox -target=ios
-          zip -ry ./Libbox.xcframework.zip ./Libbox.xcframework
+          zip -ry ./Libbox.xcframework.zip . -i ./Libbox.xcframework
           
       - name: Detect checksum
         run: |
